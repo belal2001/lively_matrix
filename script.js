@@ -20,7 +20,7 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 // the characters
-var konkani  = "゠アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレワヰヱヲンヺ・ーヽヿ0123456789"
+var konkani  = "゠アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレワヰヱヲンヺ・ーヽヿ01234567891234567890/*-+=-+_&^%$?#@!~?><:"×÷‘؛<>":/،ـ,.؟’XYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ"
 // converting the string into an array of single characters
 var characters = konkani.split("");
 var font_size = 14;
@@ -59,7 +59,7 @@ function draw() {
           var rr = Math.floor(127 * Math.sin(root.rainbowSpeed * hue + 0) + 128);
           var rg = Math.floor(127 * Math.sin(root.rainbowSpeed * hue + 2) + 128);
           var rb = Math.floor(127 * Math.sin(root.rainbowSpeed * hue + 4) + 128);
-          ctx.fillStyle = 'rgba(' + rr + ',' + rg + ',' + rb + ')';
+          ctx.fillStyle = 'rgba('#b30000')';
         } else {
           ctx.fillStyle = 'rgba(' + root.wavecolor.r + ',' + root.wavecolor.g + ',' + root.wavecolor.b + ')';
         }
